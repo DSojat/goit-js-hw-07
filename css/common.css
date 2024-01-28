@@ -32,8 +32,118 @@ ol {
   padding-left: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 button {
   cursor: pointer;
   border: none;
   line-height: 0;
 }
+
+/* ============== task1 ============== */
+
+#categories {
+  display: inline-flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 8px;
+  background: #fff;
+  color: #2e2f42;
+}
+
+.item {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 8px;
+  background: #f6f6fe;
+}
+
+.item h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+}
+
+.item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item ul li {
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 8px 16px;
+}
+
+/* ============== /task1 ============== */
+
+/* ============== task2 ============== */
+
+.gallery {
+  display: flex;
+  width: 1440px;
+  height: 848px;
+  padding: 100px 156px;
+  justify-content: space-between;
+  align-content: space-between;
+  background: #fff;
+  flex-wrap: wrap;
+}
+
+.gallery li img {
+  width: 360px;
+  height: 300px;
+  /* object-fit: cover; */
+}
+
+/* ============== /task2 ============== */
+
+/* ============== task3 ============== */
+
+.task3-form {
+  display: inline-flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 408px;
+  height: 136px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+#name-input {
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.04em;
+}
+
+.task3-form h1 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33; /* 133.333% */
+  letter-spacing: 0.04em;
+}
+
+/* ============== /task3 ============== */
