@@ -181,6 +181,10 @@ button {
   border: 1px solid #808080;
 }
 
+.login-form label input:hover {
+  border: 1px solid #000000;
+}
+
 .login-form button {
   display: flex;
   width: 86px;
@@ -196,6 +200,10 @@ button {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+}
+
+.login-form button:hover {
+  background: #6c8cff;
 }
 
 /* ============== /task4 ============== */
@@ -246,3 +254,66 @@ button {
 /* ============== /task5 ============== */
 
 /* ============== task6 ============== */
+
+#controls {
+  display: inline-flex;
+  width: 486px;
+  height: 104px;
+  padding: 32px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-radius: 8px;
+  background: #f6f6fe;
+  margin-bottom: 16px;
+}
+
+#controls input {
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #808080;
+}
+
+#controls button {
+  display: flex;
+  width: 120px;
+  height: 40px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #ff4e4e;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+#controls button:hover {
+  background: #ff7070;
+}
+
+#controls button:first-of-type {
+  background: #4e75ff;
+}
+
+#controls button:first-of-type:hover {
+  background: #6c8cff;
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 486px;
+  min-height: 160px;
+  padding: 32px;
+  border-radius: 8px;
+  gap: 10px;
+  background: #f6f6fe;
+}
+
+/* ============== /task6 ============== */
