@@ -7,7 +7,6 @@ function getRandomHexColor() {
 function createBoxes(amount) {
   const markup = [];
   for (let index = 1; index <= amount; index++) {
-    const element = index;
     let boxSize = 30;
     boxSize += 10 * index - 10;
     const rndColor = getRandomHexColor();
@@ -19,7 +18,7 @@ function createBoxes(amount) {
   controlPoint.firstElementChild.value = '';
 }
 
-function destroyBoxes(quantityBoxes) {
+function destroyBoxes() {
   const colorBoxes = document.querySelectorAll('.colorbox');
   controlPoint.firstElementChild.value = '';
   for (const element of colorBoxes) {
