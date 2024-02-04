@@ -4,18 +4,20 @@ loginForm.addEventListener('submit', handleSubmit);
 function handleSubmit(event) {
   event.preventDefault();
 
-  const userEmail = event.currentTarget.elements.email.value;
-  const userPassword = event.currentTarget.elements.password.value;
+  // Обрізані значення слід призначити змінним
+  const userEmail = event.currentTarget.elements.email.value.trim();
+  const userPassword = event.currentTarget.elements.password.value.trim();
 
-  if (userEmail.trim() === '' || userPassword.trim() === '') {
-    return alert('All form fields must be filled in');
+  if (userEmail === '' || userPassword === '') {
+    return alert('Усі поля форми повинні бути заповнені');
   }
 
-  const userDatabase = {
+  // userData - краще іменування змінних
+  const userData = {
     email: userEmail,
     password: userPassword,
   };
 
-  console.log(userDatabase);
+  console.log(userData);
   loginForm.reset();
 }

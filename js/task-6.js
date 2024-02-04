@@ -6,8 +6,8 @@ function getRandomHexColor() {
 
 function createBoxes(amount) {
   const markup = [];
+  let boxSize = 30;
   for (let index = 1; index <= amount; index++) {
-    let boxSize = 30;
     boxSize += 10 * index - 10;
     const rndColor = getRandomHexColor();
     markup.push(
@@ -32,7 +32,7 @@ const controlPoint = document.querySelector('#controls');
 controlPoint.addEventListener('click', event => {
   const quantityBoxes = controlPoint.firstElementChild.value;
   if (event.target.dataset.create === '') {
-    if (document.querySelectorAll('.colorbox')) {
+    if (document.querySelectorAll('.colorbox').length > 0) {
       destroyBoxes();
     }
     if (1 <= quantityBoxes && quantityBoxes <= 100) {
